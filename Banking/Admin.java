@@ -1,6 +1,6 @@
 package Banking;
 
-public class Admin implements java.io.Serializable{
+public class Admin extends Employee implements java.io.Serializable{
 
 	public int adminID;
 	public String fName, lName, username, password;
@@ -8,12 +8,14 @@ public class Admin implements java.io.Serializable{
 	
 	public void personalInfo()
 	{
+		System.out.println("-----------------------");
 		System.out.println("Username is: " + username);
 		System.out.println("Password is: " + password);
 		System.out.println("Account Type is: " + acctType);
 		System.out.println("First Name is: " + fName);
 		System.out.println("Last Name is: " + lName);
 		System.out.println("Admin ID is: " + adminID);
+		System.out.println("-----------------------");
 	}
 	
 	public void viewCustomer(Customer user)
